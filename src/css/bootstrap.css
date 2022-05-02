@@ -4062,7 +4062,7 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: hsla(0, 0%, 100%, .5)
+    color: hsla(0, 0%, 100%, 0.85)
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -8184,16 +8184,16 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #4b6660 !important
+    color: black !important
 }
 
 a.text-primary:focus,
 a.text-primary:hover {
-    color: #354944 !important
+    color: black !important
 }
 
 .text-secondary {
-    color: #6c757d !important
+    color: black !important
 }
 
 a.text-secondary:focus,
@@ -8211,12 +8211,12 @@ a.text-success:hover {
 }
 
 .text-info {
-    color: #4b8a7d !important
+    color: black !important
 }
 
 a.text-info:focus,
 a.text-info:hover {
-    color: #39695f !important
+    color: black !important
 }
 
 .text-warning {
@@ -8256,7 +8256,7 @@ a.text-dark:hover {
 }
 
 .text-muted {
-    color: #6c757d !important
+    color:black !important
 }
 
 .text-hide {
