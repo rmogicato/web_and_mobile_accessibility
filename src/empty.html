@@ -26,9 +26,8 @@
                 <div class="col-4">
                     <div class="btn-toolbar justify-content-end">
                         <div class="btn-group btn-group-sm">
-                            <button class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
-                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
-                        </div>
+                                <button class="btn btn-dark font-increase-button" aria-label="font increase button" id="font-increase-button" onclick="changeSizeByBtn(2)">A+</button>
+                                <button class="btn btn-dark font-decrease-button" aria-label="font decrease button" id="font-decrease-button" onclick="changeSizeByBtn(-2)">A-</button>                        </div>
                     </div>
                 </div>
             </div>
@@ -108,14 +107,14 @@
                     </div>
                 </div>
             </div>
-            <div class="d-lg-none">
+            <!--div class="d-lg-none">
                 <div class="btn-toolbar justify-content-end">
                     <div class="btn-group btn-group-sm">
                         <button class="btn btn-dark text-white font-increase-button" id="font-increase-button-1">A+</button>
                         <button class="btn btn-dark text-white font-decrease-button" id="font-decrease-button-1">A-</button>
                     </div>
                 </div>
-            </div>
+            </div-->
         </div>
     </div>
 
@@ -142,6 +141,15 @@
     <script type="text/javascript" src="./js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
     <script type="text/javascript" src="./js/empty.js"></script>
+    <script>
+        function changeSizeByBtn(size) {
+            let style = window.getComputedStyle(document.body).getPropertyValue('font-size');
+            let current_size = parseFloat(style);
+            let new_size = current_size + size;
+            console.log(new_size);
+            $('body').css('font-size', new_size);
+        }
+    </script>
 </body>
 
 </html>
