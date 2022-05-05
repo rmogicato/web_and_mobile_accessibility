@@ -26,9 +26,10 @@
                 <div class="col-4">
                     <div class="btn-toolbar justify-content-end">
                         <div class="btn-group btn-group-sm">
-                            <button class="btn btn-dark font-increase-button" aria-label="font increase button" id="font-increase-button" onclick="changeSizeByBtn(2)">A+</button>
-                            <button class="btn btn-dark font-decrease-button" aria-label="font decrease button" id="font-decrease-button" onclick="changeSizeByBtn(-2)">A-</button>                        </div>
+                            <button class="btn btn-dark font-increase-button" aria-label="font increase button" id="font-increase-button">A+</button>
+                            <button class="btn btn-dark font-decrease-button" aria-label="font decrease button" id="font-decrease-button">A-</button>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,7 +159,6 @@
                     <div class="text-danger mb-4 d-none subtitle" id="register-error">Please correct the error(s)</div>
                     <div class="sr-only" id="register-error-list">
 
-
                     </div>
                     <form id="register-form" novalidate>
                         <div class="form-group" role="group" aria-labelledby="register-basic-legend">
@@ -252,15 +252,9 @@
     <script type="text/javascript" src="./js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
     <script type="text/javascript" src="./js/login.js"></script>
-    <script>
-        function changeSizeByBtn(size) {
-            let style = window.getComputedStyle(document.body).getPropertyValue('font-size');
-            let current_size = parseFloat(style);
-            let new_size = current_size + size;
-            console.log(new_size);
-            $('body').css('font-size', new_size);
-        }
-    </script>
+    <script type="text/javascript" src="./js/fontButton.js"></script>
+
+
 </body>
 
 </html>
