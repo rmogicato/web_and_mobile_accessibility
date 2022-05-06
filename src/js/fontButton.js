@@ -15,9 +15,12 @@ function decreaseSize(event) {
 
     let style = window.getComputedStyle(document.body).getPropertyValue('font-size');
     let current_size = parseFloat(style);
+
     let new_size = current_size - 2;
 
-    $('body').css('font-size', new_size);
+    let  fontSize = parseInt(window.getComputedStyle(document.body, null).fontSize, 0);
+    console.log(fontSize);
+    document.body.style.fontSize = new_size + 'px';
 }
 
 
