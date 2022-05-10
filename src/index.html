@@ -36,14 +36,14 @@
     </div>
 
     <!-- Set visibility to hidden to hide it from normal users -->
-  <div style="visibility: hidden">
+  <div style="display:none">
     <!-- The anchor points to the id of the element -->
     <a href="#main" >Skip to main content</a>
     <a href="#footer">Skip to footer</a>
   </div>
 
-    <div class="container-fluid bg-dark nav" role="navigation">
-        <div class="container">
+    <nav class="container-fluid bg-dark nav" role="navigation" aria-label="Main Navigation">
+        <ul class="container">
             <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
                 <div class="navbar-brand d-lg-none">
                     <img class="rounded-right" src="./img/logo.jpg" alt="Website Logo" width="40" height="40">
@@ -53,65 +53,41 @@
                 </button>
                 <div class="collapse navbar-collapse" id="nav-bar-content">
                     <div class="navbar-nav mr-auto">
-                        <div class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="./">Homepage</a>
-                        </div>
-                        <div class="nav-item dropdown">
+                        </li>
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties" aria-haspopup="true" aria-expanded="false">Faculties</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
+                            <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education" aria-haspopup="true" aria-expanded="false">Education &amp; research</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Master">Master</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
+                            <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Master">Master</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry" aria-haspopup="true" aria-expanded="false">Industry &amp; partners</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
-                                </div>
-                            </div>
-                        </div>
+                            <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a></li>
+                            </ul>
+                        </li>
                     </div>
                     <div class="navbar-nav">
-                        <div class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="./login.html">Login</a>
-                        </div>
+                        </li>
                     </div>
                 </div>
             </div>
@@ -123,8 +99,8 @@
                     </div>
                 </div>
             </div -->
-        </div>
-    </div>
+        </ul>
+    </nav>
 
     <div class="container main" id="main" role="main">
         <div class="row no-gutters">
@@ -132,7 +108,7 @@
                 <div class="p-4 mt-4 mr-lg-3 bg-white news">
                     <!--div class="text-primary mb-4 title">  </div-->
                     <h2>News &amp; events</h2>
-                    <article class="media mt-4" aria-labelledby="article-title-1">
+                    <article class="media mt-4" role="article" aria-labelledby="article-title-1">
                         <img class="my-1 mr-2 rounded-right" src="./img/iceberg.jpg" alt="Picture of an Iceberg on Water">
                         <section class="media-body">
                             <!--div class="text-info mt-0 mb-2 subtitle"></div-->
@@ -146,9 +122,9 @@
                             </div>
                         </section>
                     </article>
-                    <article class="media mt-4" aria-labelledby="article-title-2">
+                    <article class="media mt-4" role="article" aria-labelledby="article-title-2">
                         <img class="my-1 mr-2 rounded-right" src="./img/universe.jpg" alt="Picture of a Galaxy">
-                        <div class="media-body">
+                        <section class="media-body">
 
                                 <a href="./empty.html?title=Article"> <h3 id="article-title-2">At iam decimum annum in spelunca iacet</h3></a>
                             <!--div class="text-info mt-0 mb-2 subtitle">
@@ -160,11 +136,11 @@
                             <div class="my-3 text-secondary text-right">
                                 <div>2018/01/12</div>
                             </div>
-                        </div>
+                        </section>
                     </article>
-                    <article class="media mt-4" aria-labelledby="article-title">
+                    <article class="media mt-4" role="article" aria-labelledby="article-title">
                         <img class="my-1 mr-2 rounded-right" src="./img/robots.jpg" alt="Picture of a small robot raising its hands">
-                        <div class="media-body">
+                        <section class="media-body">
 
                                 <a href="./empty.html?title=Article"> <h3 id="article-title">Quo plebiscito decreta a senatu est consuli quaestio Cn</h3></a>
                             <!--div class="text-info mt-0 mb-2 subtitle">
@@ -177,7 +153,7 @@
                             <div class="my-3 text-secondary text-right">
                                 <div>2017/12/30</div>
                             </div>
-                        </div>
+                        </section>
                     </article>
                 </div>
             </div>
