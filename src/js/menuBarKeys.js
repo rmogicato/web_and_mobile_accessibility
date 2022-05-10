@@ -27,7 +27,7 @@ function keydown(event) {
 }
 
 function closeMenu(){
-    var dropDownMenus = document.querySelectorAll('#nav-bar-content .dropdown .dropdown-menu');
+    let dropDownMenus = document.querySelectorAll('#nav-bar-content .dropdown .dropdown-menu');
         for (let j = 0; j < dropDownMenus.length; j++) {
             dropDownMenus[j].classList.remove('show');
     }

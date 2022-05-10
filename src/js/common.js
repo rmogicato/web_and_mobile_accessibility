@@ -14,10 +14,11 @@ function openMenu(event) {
         document.querySelectorAll('#nav-bar-content .dropdown .dropdown-menu');
     for (var j = 0; j < dropDownMenus.length; j++) {
         dropDownMenus[j].classList.remove('show');
+        dropDownMenus[j].parentNode.firstElementChild.setAttribute("aria-expanded", "false");
     }
-
     if (!isOpen) {
         currentDropDownMenu.classList.add('show');
+        currentDropDownMenu.parentNode.firstElementChild.setAttribute("aria-expanded", "true");
     }
 }
 
@@ -26,10 +27,12 @@ function openMenu(event) {
  * @param {object} event - The DOM event
  */
 function toggleNavigation(event) {
+    console.log("test")
     event.stopPropagation();
     event.preventDefault();
 
     var content = document.getElementById('nav-bar-content');
+
     if (content.classList.contains('collapse')) {
         content.classList.remove('collapse');
     } else {
