@@ -124,7 +124,7 @@
             <div class="col-12 col-md-5 mt-4 login" role="form" aria-labelledby="login">
                 <div class="p-4 mr-md-3 bg-white">
                     <h1 id="login">Login</h1>
-                    <div class="text-danger mb-4 d-none subtitle" id="login-error">Please correct the error(s)</div>
+                    <div class="text-danger mb-4 d-none subtitle" aria-live="polite" id="login-error">Please correct the error(s)</div>
                     <div class="sr-only" id="login-error-list">
                     </div>
                     <form id="login-form" novalidate>
@@ -154,7 +154,7 @@
                 <div class="p-4 bg-white">
                     <!--h1 class="text-primary mb-4 title" id="registration">Create new account</h1-->
                     <h1 id="registration">Create new account</h1>
-                    <div class="text-danger mb-4 d-none subtitle" id="register-error">Please correct the error(s)</div>
+                    <div class="text-danger mb-4 d-none subtitle" aria-live="polite" id="register-error">Please correct the error(s)</div>
                     <div class="sr-only" id="register-error-list">
 
                     </div>
@@ -182,9 +182,9 @@
                             </div>
                             <div class="form-group">
                                 <label for="register-password-control" id="password">Password</label>
+                                <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both letters and numbers.</small>
                                 <input aria-labelledby="password" aria-errormessage="register-password-error" aria-invalid="false" class="form-control" id="register-password-control" type="password" placeholder="Password" required>
                                 <small class="invalid-feedback" id="register-password-error">Please enter a valid password</small>
-                                <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both letters and numbers.</small>
                             </div>
                             <div class="form-group">
                                 <label for="register-programme-control">Programme</label>
