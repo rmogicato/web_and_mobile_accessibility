@@ -13,6 +13,9 @@ function keydown(event) {
                  closeMenu();
             }
         }
+        else if (currentDropDownButton.className === "nav-link dropdown-toggle"){
+            closeMenu();
+        }
     }
     else if (event.key === "Tab") {
         let currentDropDownButton = event.target;
@@ -28,7 +31,7 @@ function keydown(event) {
         event.stopPropagation();
         event.preventDefault();
         let currentDropDownButton = event.target;
-        if (currentDropDownButton.className === "dropdown-item" || currentDropDownButton.className === "nav-link dropdown-toggle" ){
+        if (currentDropDownButton.className === "dropdown-item" || currentDropDownButton.className === "nav-link dropdown-toggle" || currentDropDownButton.className === "nav-link"){
             currentDropDownButton.click()
         }
     }
