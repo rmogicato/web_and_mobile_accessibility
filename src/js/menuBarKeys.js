@@ -40,6 +40,7 @@ function closeMenu(){
     let dropDownMenus = document.querySelectorAll('#nav-bar-content .dropdown .dropdown-menu');
         for (let j = 0; j < dropDownMenus.length; j++) {
             dropDownMenus[j].classList.remove('show');
+            dropDownMenus[j].parentNode.firstElementChild.setAttribute("aria-expanded", "false");
     }
 }
 
