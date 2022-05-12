@@ -130,12 +130,12 @@
                     <form id="login-form" novalidate>
                         <div class="form-group" >
                             <label for="login-email-control" id="login-email-input" style="position: relative; top: 20px;">Email</label>
-                            <input class="form-control" aria-invalid="true" aria-errormessage="login-name-error" aria-labelledby="login-email-input" id="login-email-control" type="email" placeholder="Email" required style="position: relative; top: 10px;">
+                            <input class="form-control" aria-invalid="false" aria-errormessage="login-name-error" aria-labelledby="login-email-input" id="login-email-control" type="email" placeholder="Email" required style="position: relative; top: 10px;">
                             <small style="position: relative; top: 3px;" class="invalid-feedback" id="login-name-error">Please enter a valid email address</small>
                         </div>
                         <div class="form-group">
                             <label for="login-password-control" style="position: relative; top: 20px;" id="login-password-input">Password</label>
-                            <input class="form-control" aria-invalid="true" aria-errormessage="login-pwd-error" aria-labelledby="login-password-input" id="login-password-control" type="password" placeholder="Password" style="position: relative; top: 10px;">
+                            <input class="form-control" aria-invalid="false" aria-errormessage="login-pwd-error" aria-labelledby="login-password-input" id="login-password-control" type="password" placeholder="Password" style="position: relative; top: 10px;">
                             <small style="position: relative; top: 3px;" id="login-pwd-error" class="invalid-feedback">Invalid password</small>
                         </div>
                         <div class="form-group">
@@ -166,29 +166,29 @@
                             <div class="form-row">
                                 <div class="form-group col-12 col-lg-6">
                                     <label for="register-first-name-control" id="first-name">First name</label>
-                                    <input aria-labelledby="first-name" aria-invalid="true" aria-errormessage="registration-first-name-error" class="form-control" type="text" id="register-first-name-control" placeholder="First name" required>
+                                    <input aria-labelledby="first-name" aria-invalid="false" aria-errormessage="registration-first-name-error" class="form-control" type="text" id="register-first-name-control" placeholder="First name" required>
                                     <small class="invalid-feedback" id="registration-first-name-error">Please enter your first name</small>
                                 </div>
                                 <div class="form-group col-12 col-lg-6">
                                     <label for="register-last-name-control" id="last-name">Last name</label>
-                                    <input aria-labelledby="last-name" aria-invalid="true" aria-errormessage="registration-last-name-error" class="form-control" type="text" id="register-last-name-control" placeholder="Last name" required>
+                                    <input aria-labelledby="last-name" aria-invalid="false" aria-errormessage="registration-last-name-error" class="form-control" type="text" id="register-last-name-control" placeholder="Last name" required>
                                     <small id="registration-last-name-error" class="invalid-feedback">Please enter your last name</small>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="register-email-control"  id="email">Email</label>
-                                <input aria-labelledby="email" aria-invalid="true" aria-errormessage="programme-error" class="form-control" id="register-email-control" type="email" placeholder="Email" required>
+                                <input aria-labelledby="email" aria-invalid="false" aria-errormessage="programme-error" class="form-control" id="register-email-control" type="email" placeholder="Email" required>
                                 <small id="programme-error" class="invalid-feedback">Please choose a programme</small>
                             </div>
                             <div class="form-group">
                                 <label for="register-password-control" id="password">Password</label>
-                                <input aria-labelledby="password" aria-errormessage="register-password-error" aria-invalid="true" class="form-control" id="register-password-control" type="password" placeholder="Password" required>
+                                <input aria-labelledby="password" aria-errormessage="register-password-error" aria-invalid="false" class="form-control" id="register-password-control" type="password" placeholder="Password" required>
                                 <small class="invalid-feedback" id="register-password-error">Please enter a valid password</small>
                                 <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both letters and numbers.</small>
                             </div>
                             <div class="form-group">
                                 <label for="register-programme-control">Programme</label>
-                                <select aria-invalid="true" aria-errormessage="register-programme-error" class="form-control" id="register-programme-control" required aria-labelledby="select-programme-description">
+                                <select aria-invalid="false" aria-errormessage="register-programme-error" class="form-control" id="register-programme-control" required aria-labelledby="select-programme-description">
                                     <option value="" id="select-programme-description">Please select your education or research programme</option>
                                     <option value="bachelor">Bachelor</option>
                                     <option value="master">Master</option>

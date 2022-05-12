@@ -5,6 +5,7 @@
 function setValid(element) {
     element.classList.remove('is-invalid');
     element.classList.add('is-valid');
+    element.setAttribute("aria-invalid", "false")
 }
 
 /**
@@ -14,6 +15,7 @@ function setValid(element) {
 function setInvalid(element) {
     element.classList.remove('is-valid');
     element.classList.add('is-invalid');
+    element.setAttribute("aria-invalid", "true");
 }
 
 /**
@@ -97,6 +99,8 @@ function forgot(event) {
  * @param {object} event - The DOM event
  */
 function register(event) {
+    console.log(event);
+
     event.preventDefault();
     event.stopPropagation();
 
