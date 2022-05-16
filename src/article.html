@@ -12,17 +12,23 @@
 </head>
 
 <body class="d-flex flex-column bg-light">
-        <header class="container-fluid d-none d-lg-block my-4 header" role="banner">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-8 media">
-                        <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg" alt="Website Logo">
-                        <div class="media-body align-self-center">
-                            <h1 class="mb-0 title">Lorem Ipsum
-                                <br>Institute of Technology
-                            </h1>
+    <div class="container-fluid d-none d-lg-block my-4 header" role="banner">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-8 media">
+                    <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg" alt="Website Logo">
+                    <div class="media-body align-self-center">
+                        <div class="mb-0 title"> <h1>Lorem Ipsum
+                            <br>Institute of Technology</h1>
                         </div>
                     </div>
+                </div>
+                <!-- Set visibility to hidden to hide it from normal users -->
+                <div class="sr-only">
+                    <!-- The anchor points to the id of the element -->
+                    <a href="#login" >Skip to Login</a>
+                    <a href="#registration">Skip to Registration</a>
+                </div>
                     <div class="col-4">
                         <div class="btn-toolbar justify-content-end">
                             <div class="btn-group btn-group-sm">
@@ -33,9 +39,8 @@
                     </div>
                 </div>
             </div>
-        </header>
-
-
+        </div>
+    </div>
     <div class="container-fluid bg-dark nav" role="navigation">
         <div class="container">
             <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
