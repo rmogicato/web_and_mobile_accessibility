@@ -40,8 +40,8 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark nav" role="navigation">
-        <div class="container">
+    <nav class="container-fluid bg-dark nav" role="navigation" aria-label="Main Navigation">
+        <ul class="container">
             <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
                 <div class="navbar-brand d-lg-none">
                     <img class="rounded-right" src="./img/logo.jpg" alt="Website Logo" width="40" height="40">
@@ -51,69 +51,44 @@
                 </button>
                 <div class="collapse navbar-collapse" id="nav-bar-content">
                     <div class="navbar-nav mr-auto">
-                        <div aria-labelledby="nav-homepage" class="nav-item">
-                            <a id="nav-homepage" class="nav-link" href="./">Homepage</a>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties">Faculties</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Master">Master</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry">Industry &amp; partners</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
-                                </div>
-                            </div>
-                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Homepage</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties" aria-haspopup="true" aria-expanded="false">Faculties</a>
+                            <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./empty.html?title=Applied+sciences" aria-checked="false">Applied sciences</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning" aria-checked="false">Architecture &amp; planning</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Construction+%26+environment" aria-checked="false">Construction &amp; environment</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Engineering" aria-checked="false">Engineering</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences" aria-checked="false">Health &amp; social sciences</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education" aria-haspopup="true" aria-expanded="false">Education &amp; research</a>
+                            <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./empty.html?title=Bachelor" aria-checked="false">Bachelor</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Master" aria-checked="false">Master</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Continuing+education" aria-checked="false">Continuing education</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Doctorate" aria-checked="false">Doctorate</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry" aria-haspopup="true" aria-expanded="false">Industry &amp; partners</a>
+                            <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./empty.html?title=Public+relations" aria-checked="false">Public relations</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Commercialization" aria-checked="false">Commercialization</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners" aria-checked="false">Sponsors &amp; partners</a></li>
+                            </ul>
+                        </li>
                     </div>
                     <div class="navbar-nav">
-                        <div class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="./login.html">Login</a>
-                        </div>
+                        </li>
                     </div>
                 </div>
             </div>
-
             <!-- div class="d-lg-none">
                 <div class="btn-toolbar justify-content-end">
                     <div class="btn-group btn-group-sm">
@@ -122,9 +97,9 @@
                     </div>
                 </div>
             </div -->
-        </div>
-    </div>
-
+        </ul>
+    </nav>
+    
     <div class="container mt-4 main" id="main" role="main">
         <div class="p-5 bg-white">
             <h1 class="text-center">Global Temperature record</h1>
@@ -214,7 +189,7 @@
             </div>
         </div>
     </div>
-    
+
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/popper.js"></script>
     <script type="text/javascript" src="./js/bootstrap.js"></script>
