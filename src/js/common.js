@@ -27,7 +27,6 @@ function openMenu(event) {
  * @param {object} event - The DOM event
  */
 function toggleNavigation(event) {
-    console.log("test")
     event.stopPropagation();
     event.preventDefault();
 
