@@ -6,7 +6,8 @@ function increaseSize(event) {
     let current_size = parseFloat(style);
     let new_size = current_size + 2;
 
-    $('body').css('font-size', new_size);
+    document.body.style.fontSize = new_size + 'px';
+    localStorage.setItem("fontSize", new_size + 'px');
 }
 
 function decreaseSize(event) {
@@ -18,11 +19,9 @@ function decreaseSize(event) {
 
     let new_size = current_size - 2;
 
-    let  fontSize = parseInt(window.getComputedStyle(document.body, null).fontSize, 0);
-    console.log(fontSize);
     document.body.style.fontSize = new_size + 'px';
+    localStorage.setItem("fontSize", new_size + 'px');
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
     document
